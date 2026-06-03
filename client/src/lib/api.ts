@@ -1,4 +1,4 @@
-const BASE_URL = '';
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 
 interface RequestOptions extends RequestInit {
   params?: Record<string, any>;
@@ -30,7 +30,7 @@ async function request<T>(url: string, options: RequestOptions = {}): Promise<T>
     defaultHeaders['Authorization'] = `Bearer ${token}`;
   }
 
-  const response = await fetch(queryUrl, {
+  const response = await fetch(`${BASE_URL}${queryUrl}`, {
     headers: {
       ...defaultHeaders,
       ...headers,
