@@ -43,7 +43,10 @@ const authLimiter = rateLimit({
 
 // Middleware
 app.use(cors({
-  origin: '*', // For local dev / testing. In production, configure to target client URL.
+  origin: (origin, callback) => {
+    // Dynamically allow the request origin to support credentials (CORS wildcard restriction bypass)
+    callback(null, true);
+  },
   credentials: true,
   exposedHeaders: ['Content-Disposition'] // To allow downloading Excel/CSVs
 }));
