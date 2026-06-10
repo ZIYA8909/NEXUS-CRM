@@ -62,3 +62,5 @@ For test runs, the system supports role-based access:
 * **Frontend Site**: Deployed on [Vercel](https://vercel.com/)
 * **Backend API Server**: Deployed on [Render](https://render.com/)
 * **Database**: Hosted on [MongoDB Atlas Cloud](https://www.mongodb.com/products/platform/atlas-database)
+
+## Try it out - https://nexus-crm-snowy-tau.vercel.app/
