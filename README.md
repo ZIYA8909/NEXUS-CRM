@@ -64,3 +64,5 @@ For test runs, the system supports role-based access:
 * **Database**: Hosted on [MongoDB Atlas Cloud](https://www.mongodb.com/products/platform/atlas-database)
 
 ## Try it out - https://nexus-crm-snowy-tau.vercel.app/
+
+<img width="1918" height="1028" alt="Image" src="https://github.com/user-attachments/assets/0fbd5102-0f0c-4887-baa7-b841c42a1989" />
